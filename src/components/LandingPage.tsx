@@ -17,9 +17,9 @@ import {
   Brain,
   ChevronRight,
   ArrowRight,
-  Github,
-  Twitter,
-  Linkedin
+  Globe,
+  Mail,
+  MessageSquare
 } from "lucide-react";
 import { ActivePage, AppTheme } from "../types";
 import { cn } from "../lib/utils";
@@ -364,9 +364,9 @@ export default function LandingPage({ onNavigate, theme, toggleTheme }: LandingP
               Precision sleep science for the digital age. Built with passion at Maranatha Global.
             </p>
             <div className="flex gap-4">
-              <Twitter className="w-5 h-5 text-on-surface-variant hover:text-primary cursor-pointer transition-colors" />
-              <Linkedin className="w-5 h-5 text-on-surface-variant hover:text-primary cursor-pointer transition-colors" />
-              <Github className="w-5 h-5 text-on-surface-variant hover:text-primary cursor-pointer transition-colors" />
+              <Globe className="w-5 h-5 text-on-surface-variant hover:text-primary cursor-pointer transition-colors" />
+              <Mail className="w-5 h-5 text-on-surface-variant hover:text-primary cursor-pointer transition-colors" />
+              <MessageSquare className="w-5 h-5 text-on-surface-variant hover:text-primary cursor-pointer transition-colors" />
             </div>
           </div>
           

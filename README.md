@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# SleepBalance AI 🌙
 
-# Run and deploy your AI Studio app
+Professional Circadian Wellness & Sleep Deficit Prediction Platform.
 
-This contains everything you need to run your app locally.
+## Features
+- **Real-time Analytics:** Integrated with real-world sleep datasets.
+- **Precision Modeling:** Cognitive AI-driven sleep deficit predictions.
+- **Premium UI:** Built with React, TypeScript, and Framer Motion.
+- **Smooth Experience:** Lenis smooth scrolling for high-end web experience.
 
-View your app in AI Studio: https://ai.studio/apps/c25c780d-d950-41dd-ae42-385b6f9d9b99
+## Tech Stack
+- React 19 + TypeScript
+- Framer Motion (Animation Engine)
+- Lenis (Smooth Scroll)
+- Recharts (Data Visualization)
+- Tailwind CSS
 
-## Run Locally
+## Dataset
+Located in `/Dataset`:
+- `teen_phone_addiction_dataset.csv`
+- `student_digital_life.csv`
 
-**Prerequisites:**  Node.js
+## Development
+```bash
+npm install
+npm run dev
+```
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+Built with passion for Maranatha Global.

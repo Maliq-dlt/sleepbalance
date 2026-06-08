@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 export type AppTheme = 'light' | 'dark';
 
 export type ActivePage = 'landing' | 'dashboard-overview' | 'dashboard-input' | 'dashboard-analytics' | 'dashboard-tips' | 'dashboard-settings';
@@ -12,7 +7,7 @@ export type SleepQuality = 'poor' | 'fair' | 'good';
 
 export interface SleepEntry {
   id: string;
-  dayLabel: string; // e.g., 'Sen', 'Sel', 'Rab'
+  dayLabel: string;
   sleepHours: number;
   screenHours: number;
   stressLevel: StressLevel;
@@ -29,6 +24,6 @@ export interface RecommendationTip {
   id: string;
   title: string;
   description: string;
-  iconName: string; // Lucide icon name or indicator
+  iconName: string;
   colorType: 'primary' | 'secondary' | 'tertiary' | 'error';
 }

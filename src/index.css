@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --surface: #faf8fe;
+  --surface-dim: #dad9df;
+  --surface-bright: #faf8fe;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f4f3f9;
+  --surface-container: #eeedf3;
+  --surface-container-high: #e9e7ed;
+  --surface-container-highest: #e3e2e7;
+  --on-surface: #1a1b20;
+  --on-surface-variant: #444650;
+  --inverse-surface: #2f3035;
+  --inverse-on-surface: #f1f0f6;
+  --outline: #747781;
+  --outline-variant: #c4c6d1;
+  --surface-tint: #435d99;
+  --primary: #435d99;
+  --on-primary: #ffffff;
+  --primary-container: #8ea7e9;
+  --on-primary-container: #1f3b76;
+  --inverse-primary: #b1c5ff;
+  --secondary: #2f647d;
+  --on-secondary: #ffffff;
+  --secondary-container: #ade1fe;
+  --on-secondary-container: #2f657e;
+  --tertiary: #694cac;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #b597fd;
+  --on-tertiary-container: #472888;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+  --primary-fixed: #dae2ff;
+  --primary-fixed-dim: #b1c5ff;
+  --on-primary-fixed: #001946;
+  --on-primary-fixed-variant: #2a4480;
+  --secondary-fixed: #c1e8ff;
+  --secondary-fixed-dim: #9acdea;
+  --on-secondary-fixed: #001e2b;
+  --on-secondary-fixed-variant: #0f4c64;
+  --tertiary-fixed: #e9ddff;
+  --tertiary-fixed-dim: #d0bcff;
+  --on-tertiary-fixed: #23005b;
+  --on-tertiary-fixed-variant: #513393;
+}
+
+.dark {
+  --surface: #101223;
+  --surface-dim: #101223;
+  --surface-bright: #36384b;
+  --surface-container-lowest: #0b0d1e;
+  --surface-container-low: #181a2c;
+  --surface-container: #1c1e30;
+  --surface-container-high: #2b2d40;
+  --surface-container-highest: #313346;
+  --on-surface: #e4e1f6;
+  --on-surface-variant: #c7c5db;
+  --inverse-surface: #e4e1f6;
+  --inverse-on-surface: #2f3042;
+  --outline: #9190a4;
+  --outline-variant: #474659;
+  --surface-tint: #b799ff;
+  --primary: #b799ff;
+  --on-primary: #361678;
+  --primary-container: #4a3c74;
+  --on-primary-container: #e7deff;
+  --inverse-primary: #6549a9;
+  --secondary: #a2c9ff;
+  --on-secondary: #00315c;
+  --secondary-container: #004882;
+  --on-secondary-container: #d3e3ff;
+  --tertiary: #f3b2db;
+  --on-tertiary: #4f2241;
+  --tertiary-container: #693b58;
+  --on-tertiary-container: #ffd7f1;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #8c1d18;
+  --on-error-container: #f9dedc;
+  --primary-fixed: #e7deff;
+  --primary-fixed-dim: #ceb8ff;
+  --on-primary-fixed: #20005d;
+  --on-primary-fixed-variant: #4d308f;
+  --secondary-fixed: #d3e3ff;
+  --secondary-fixed-dim: #a2c9ff;
+  --on-secondary-fixed: #001c39;
+  --on-secondary-fixed-variant: #004882;
+  --tertiary-fixed: #ffd7f1;
+  --tertiary-fixed-dim: #f3b2db;
+  --on-tertiary-fixed: #380d2d;
+  --on-tertiary-fixed-variant: #6b3c5a;
+}
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-surface: var(--surface);
+  --color-surface-dim: var(--surface-dim);
+  --color-surface-bright: var(--surface-bright);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container: var(--surface-container);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-surface-container-highest: var(--surface-container-highest);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-inverse-surface: var(--inverse-surface);
+  --color-inverse-on-surface: var(--inverse-on-surface);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
+  --color-secondary: var(--secondary);
+  --color-on-secondary: var(--on-secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-secondary-container: var(--on-secondary-container);
+  --color-tertiary: var(--tertiary);
+  --color-on-tertiary: var(--on-tertiary);
+  --color-tertiary-container: var(--tertiary-container);
+  --color-on-tertiary-container: var(--on-tertiary-container);
+  --color-error: var(--error);
+  --color-on-error: var(--on-error);
+  --color-error-container: var(--error-container);
+  --color-on-error-container: var(--on-error-container);
+  --color-primary-fixed: var(--primary-fixed);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-on-primary-fixed: var(--on-primary-fixed);
+  --color-on-primary-fixed-variant: var(--on-primary-fixed-variant);
+  --color-secondary-fixed: var(--secondary-fixed);
+  --color-secondary-fixed-dim: var(--secondary-fixed-dim);
+  --color-on-secondary-fixed: var(--on-secondary-fixed);
+  --color-on-secondary-fixed-variant: var(--on-secondary-fixed-variant);
+}
+
+/* Glassmorphism custom classes */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 12px 32px rgba(36, 48, 79, 0.04);
+}
+
+.dark .glass-card {
+  background-color: rgba(28, 30, 48, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(228, 225, 246, 0.1);
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.glass-nav {
+  background-color: rgba(250, 248, 254, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.ambient-shadow {
+  box-shadow: 0px 12px 32px rgba(36, 48, 79, 0.04);
+}
+.ambient-shadow:hover {
+  box-shadow: 0px 16px 40px rgba(36, 48, 79, 0.08);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #435d99, #2f647d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .text-gradient {
+  background: linear-gradient(135deg, #b799ff, #a2c9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
